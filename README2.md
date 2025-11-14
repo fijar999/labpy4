@@ -1,19 +1,20 @@
 # Program Input Data Mahasiswa
 
-Program ini digunakan untuk memasukkan data mahasiswa berupa Nama, NIM, dan sekaligus menghitung nilai Tugas, UTS, UAS secara otomatis:
+Program ini digunakan untuk memasukkan data mahasiswa berupa Nama, NIM, dan nilai (Tugas, UTS, UAS) dengan validasi ketat. Setiap nilai akhir akan dihitung secara otomatis berdasarkan persentase:
 
 * Tugas: **30%**
 * UTS: **35%**
 * UAS: **35%**
 
-Hasil akhir perhitungan akan muncul otomatis dan langsung terdaftar dalam kolom  
+Data yang berhasil dimasukkan akan ditampilkan dalam bentuk tabel menggunakan karakter box-drawing sehingga menyerupai tampilan kolom data.
 
 ## Fitur Utama
 
-* Keterangan **Nama** (tidak boleh kosong dan tidak boleh mengandung angka)
-* Keterangan **NIM** (wajib angka)
-* Keterangan nilai **Tugas/UTS/UAS** (0–100 dan wajib angka)
-* Perhitungan nilai akhir otomatis dan langsung masuk kedalam kolom  
+* Validasi **Nama** (tidak boleh kosong dan tidak boleh mengandung angka)
+* Validasi **NIM** (wajib angka)
+* Validasi nilai **Tugas/UTS/UAS** (0–100 dan wajib angka)
+* Perhitungan nilai akhir otomatis
+* Tampilan tabel rapi tanpa warna dengan karakter border
 
 ## Cara Menjalankan
 
@@ -24,7 +25,7 @@ Hasil akhir perhitungan akan muncul otomatis dan langsung terdaftar dalam kolom
 
 ## Output
 
-Hasil akhir akan muncul seperti pada tabel berikut:
+Program menghasilkan tabel seperti berikut:
 
 ```
 ┌────┬──────────────┬────────┬────────┬───────┬──────┬────────┐
@@ -36,6 +37,8 @@ Hasil akhir akan muncul seperti pada tabel berikut:
 
 ## Catatan
 
-- Bobot Nilai: Tugas 30%, UTS 35%, UAS 35%  
-- Data Sementara: Data hanya tersimpan selama program berjalan  
-- Range Nilai: Disarankan input 0-100
+Program ini dapat dikembangkan lebih lanjut dengan menambahkan fitur seperti:
+
+* Edit dan hapus data
+* Simpan data ke file CSV atau Excel
+* Sorting data berdasarkan kolom tertentu
